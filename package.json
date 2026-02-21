@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/sv.js"
+    "dev": "nodemon sv.js"
   },
   "keywords": [],
   "author": "",
