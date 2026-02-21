@@ -23,17 +23,17 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/',(req,res) =>{
-    res.render('index')
+    res.render('index.ejs')
 })
 app.get('/choice',(req,res) =>{
-    res.render('choice')
+    res.render('choice.ejs')
 })
 
 app.get('/login',(req,res) =>{
-    res.render('login')
+    res.render('login.ejs')
 })
 app.get('/signup',(req,res) =>{
-    res.render('sign')
+    res.render('sign.ejs')
 })  
 
 app.post("/signup", async (req,res)=>{
@@ -86,10 +86,10 @@ app.post("/login", async (req,res)=>{
 })
 
 app.get('/teach',(req,res) =>{
-    res.render('teach')
+    res.render('teach.ejs')
 })
 app.get('/stud',(req,res) =>{
-    res.render('stud')
+    res.render('stud.ejs')
 })
 
 app.listen(port, () => {
