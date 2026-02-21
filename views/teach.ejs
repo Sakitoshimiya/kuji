@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="teach.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="tea.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav_bar">
+            <a href="/home">
+                <div class="logo">
+                    <img src="logo.png">
+                    <h2>UBHS</h2>
+                </div>
+            </a>
+            <div class="navbut">
+                <div class="nav_item" onclick="showPage('home')">
+                    <i class="ri-home-line"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav_item" onclick="showPage('courses')">
+                    <i class="ri-git-repository-fill"></i>
+                    <span>Courses</span>
+                </div>
+                <div class="nav_item" onclick="showPage('calendar')">
+                    <i class="ri-calendar-2-fill"></i>
+                    <span>Calendar</span>
+                </div>
+                <div class="nav_item" onclick="showPage('report')">
+                    <i class="ri-alert-fill"></i>
+                    <span>Report</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="topbar">
+                <div class="search_bar">
+                    <i class="ri-search-line"></i>
+                    <input type="text" required placeholder="Search">
+                </div>
+                <div class="header">
+                    <i class="ri-moon-line" id="themeToggle"></i>
+                    <i class="ri-mail-line"></i>
+                    <img src="avt.jpg">
+                </div>
+            </div>
+            <div class="feat">
+                <div class="page active" id="home">
+                    Home
+                </div>
+
+                <div class="page" id="courses">
+                    Courses
+                </div>
+
+                <div class="page" id="calendar">
+                    Calendar
+                </div>
+                
+                <div class="page" id="report">
+                    Report
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer class="credit">
+    © 2026 UBHS • All rights reserved
+    </footer> -->
+</body>
+</html>
