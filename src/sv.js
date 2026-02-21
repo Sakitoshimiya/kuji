@@ -22,7 +22,7 @@ app.set('view engine','ejs');
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/home',(req,res) =>{
+app.get('/',(req,res) =>{
     res.render('index')
 })
 app.get('/choice',(req,res) =>{
@@ -88,7 +88,9 @@ app.post("/login", async (req,res)=>{
 app.get('/teach',(req,res) =>{
     res.render('teach')
 })
-
+app.get('/stud',(req,res) =>{
+    res.render('stud')
+})
 
 app.listen(port, () => {
     console.log(`Running on port: ${port}`);
